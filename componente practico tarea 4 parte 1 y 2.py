@@ -1,3 +1,14 @@
+# =====================================================================
+# UNIVERSIDAD NACIONAL ABIERTA Y A DISTANCIA - UNAD
+# ESCUELA DE CIENCIAS BÁSICAS TECNOLOGÍA E INGENIERÍA (ECBTI)
+# CURSO: PROGRAMACIÓN (CÓDIGO: 213023)
+# 
+# EJERCICIO 1: SISTEMA INTEGRAL DE GESTIÓN DE CLIENTES, SERVICIOS Y RESERVAS
+# EMPRESA: SOFTWARE FJ
+# DESARROLLADOR: Luis Fernando Lozada Castro (Simulación de Flujo Individual)
+# FECHA: Octubre de 2026
+# =====================================================================
+
 from abc import ABC, abstractmethod
 import logging
 
