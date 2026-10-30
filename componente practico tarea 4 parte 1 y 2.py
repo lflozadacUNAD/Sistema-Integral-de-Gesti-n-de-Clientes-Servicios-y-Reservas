@@ -63,4 +63,25 @@ class Cliente(EntidadSistema):
 
     def obtener_resumen(self) -> str:
         return f"Cliente: {self.nombre} [Cédula: {self.cedula}]"
+    
 
+# ==========================================
+# PRUEBA COMPLEMENTARIA - PARTE 1 Y 2
+# ==========================================
+if __name__ == "__main__":
+    print("=== PROBANDO ENCAPSULAMIENTO DE LA PARTE 1 Y 2 ===")
+    
+    try:
+        # 1. Crear un cliente con datos correctos
+        cliente_valido = Cliente("123456", "Luis Fernando", "luis@correo.com")
+        print(f"[ÉXITO] {cliente_valido.obtener_resumen()}")
+        
+        # 2. Intentar crear un cliente con correo inválido para forzar la excepción
+        print("\nIntentando registrar correo inválido...")
+        cliente_invalido = Cliente("789101", "Ana Gómez", "correo_sin_arroba")
+        
+    except ClienteInvalidoError as e:
+        print(f"[ERROR CONTROLADO] Se lanzó la excepción esperada: {e}")
+        logging.error(f"Error de validación controlado en la entrega: {e}")
+        
+    print("\n=== FIN DE LA PRUEBA DE LA PARTE 1 Y 2 ===")
