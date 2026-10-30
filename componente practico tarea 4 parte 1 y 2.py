@@ -1,0 +1,66 @@
+from abc import ABC, abstractmethod
+import logging
+
+# 1. CONFIGURACIÓN DEL ARCHIVO DE LOGS
+logging.basicConfig(
+    filename='sistema_gestion.log',
+    filemode='a',
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.INFO,
+    encoding='utf-8'
+)
+
+# 2. EXCEPCIONES PERSONALIZADAS
+class SoftwareFJException(Exception):
+    """Excepción base para todas las anomalías de la empresa Software FJ"""
+    pass
+
+class ClienteInvalidoError(SoftwareFJException):
+    """Se lanza cuando los datos del cliente violan las validaciones de encapsulado"""
+    pass
+
+class ServicioError(SoftwareFJException):
+    """Se lanza ante fallos de parámetros o indisponibilidad en los servicios"""
+    pass
+
+class ReservaError(SoftwareFJException):
+    """Se lanza cuando una regla de negocio del sistema de reservas se rompe"""
+    pass
+
+
+# 3. ARQUITECTURA DE CLASES ORIENTADA A OBJETOS
+class EntidadSistema(ABC):
+    """Clase abstracta que representa entidades generales del sistema"""
+    def __init__(self, identificador: str):
+        self._identificador = identificador
+
+    @abstractmethod
+    def obtener_resumen(self) -> str:
+        pass
+
+
+class Cliente(EntidadSistema):
+    """Clase Cliente con validaciones robustas y encapsulación"""
+    def __init__(self, cedula: str, nombre: str, correo: str):
+        super().__init__(cedula)
+        self.nombre = nombre
+        self.correo = correo  # Activa el setter de validación
+
+    @property
+    def cedula(self) -> str:
+        return self._identificador
+
+    @property
+    def correo(self) -> str:
+        return self._correo
+
+    @correo.setter
+    def correo(self, valor: str):
+        # Validación estricta del formato de correo electrónico
+        if "@" not in valor or "." not in valor:
+            raise ClienteInvalidoError(f"Estructura de correo inválida: '{valor}'")
+        self._correo = valor
+
+    def obtener_resumen(self) -> str:
+        return f"Cliente: {self.nombre} [Cédula: {self.cedula}]"
+

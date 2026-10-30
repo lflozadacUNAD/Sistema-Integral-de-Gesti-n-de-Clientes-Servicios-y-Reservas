@@ -1,0 +1,24 @@
+2026-10-30 16:11:45,436 - INFO - Operación #1 completada con éxito.
+2026-10-30 16:11:45,436 - ERROR - Operación #2 Falló - Razón: Estructura de correo inválida: 'anagomezcorreo'
+2026-10-30 16:11:45,437 - INFO - Operación #3 completada con éxito.
+2026-10-30 16:11:45,437 - INFO - Operación #4 completada con éxito.
+2026-10-30 16:11:45,437 - ERROR - Operación #5 Falló - Razón: Las horas de reserva de sala deben ser mayores a 0.
+2026-10-30 16:11:45,437 - INFO - Operación #6 completada con éxito.
+2026-10-30 16:11:45,438 - ERROR - Operación #7 Falló - Razón: Operación denegada: Las reservas de Software FJ no pueden superar las 24 horas.
+2026-10-30 16:11:45,438 - INFO - CONFIRMACIÓN EXITOSA -> Cliente: Luis Pérez | Servicio: Sala de Juntas Premium
+2026-10-30 16:11:45,438 - INFO - Operación #8 completada con éxito.
+2026-10-30 16:11:45,438 - INFO - CANCELACIÓN PROCESADA -> Cliente: Luis Pérez
+2026-10-30 16:11:45,438 - ERROR - Operación #9 Falló - Razón: No se puede confirmar una reserva previamente cancelada.
+2026-10-30 16:11:45,439 - INFO - Operación #10 completada con éxito.
+2026-10-30 16:35:11,279 - INFO - Operación #1 completada con éxito.
+2026-10-30 16:35:11,279 - ERROR - Operación #2 Falló - Razón: Estructura de correo inválida: 'anagomezcorreo'
+2026-10-30 16:35:11,279 - INFO - Operación #3 completada con éxito.
+2026-10-30 16:35:11,280 - INFO - Operación #4 completada con éxito.
+2026-10-30 16:35:11,280 - ERROR - Operación #5 Falló - Razón: Las horas de reserva de sala deben ser mayores a 0.
+2026-10-30 16:35:11,280 - INFO - Operación #6 completada con éxito.
+2026-10-30 16:35:11,280 - ERROR - Operación #7 Falló - Razón: Operación denegada: Las reservas de Software FJ no pueden superar las 24 horas.
+2026-10-30 16:35:11,280 - INFO - CONFIRMACIÓN EXITOSA -> Cliente: Luis Pérez | Servicio: Sala de Juntas Premium
+2026-10-30 16:35:11,281 - INFO - Operación #8 completada con éxito.
+2026-10-30 16:35:11,281 - INFO - CANCELACIÓN PROCESADA -> Cliente: Luis Pérez
+2026-10-30 16:35:11,281 - ERROR - Operación #9 Falló - Razón: No se puede confirmar una reserva previamente cancelada.
+2026-10-30 16:35:11,281 - INFO - Operación #10 completada con éxito.
