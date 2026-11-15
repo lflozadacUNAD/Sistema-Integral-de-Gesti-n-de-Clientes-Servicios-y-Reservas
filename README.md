@@ -8,6 +8,7 @@ Aplicación desarrollada en Python bajo el paradigma de Programación Orientada 
 ## Estructura del repositorio
 * `componente practico tarea 4 final.py`: Código fuente principal con la arquitectura POO, validaciones, sobrecarga de métodos y el motor de simulación de 12 operaciones.
 * `sistema_gestion.log`: Archivo generado automáticamente donde se registran los eventos exitosos y los errores controlados durante la ejecución.
+* `README.md`: Documento de referencia rápida con la descripción de la arquitectura, los conceptos aplicados y las instrucciones de instalación y ejecución en consola.
 
 ## Conceptos implementados
 * **Abstracción y Herencia:** Clases base abstractas (`EntidadSistema` y `Servicio`) con métodos abstractos implementados en clases derivadas.
